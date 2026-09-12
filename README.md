@@ -55,17 +55,3 @@ navigate({
 `objectFromSearchParams` should turn repeated keys into an array, or routers
 with a custom `parseSearch` that supports `?filter=a&filter=b` lose all but the
 last value.
-
-## What is in here
-
-- `src/main.jsx` is the whole app: two routes, one `useQueryState` toggle, and a
-  box printing `router.state.location.href`.
-- No custom `parseSearch` or `stringifySearch`. Library defaults only.
-- `nuqs` 2.10.1, `@tanstack/react-router` 1.170.35, React 19, Vite 6.
-
-## Run it locally
-
-```bash
-npm install
-npm run dev
-```
