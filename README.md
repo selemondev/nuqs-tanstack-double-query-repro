@@ -22,7 +22,7 @@ Two query strings. `validateSearch` then reads the tail, so `view` goes back to
 default, not the `limit=25` that was on screen, so the tail comes from route
 resolution.
 
-Now click **fine: route without one** (`/customers`) and press the same button.
+Now click **fine: route without a dynamic segment** (`/customers`) and press the same button.
 That one works. The glued path matches no route, the appended search is empty,
 and the browser splits the pathname back correctly. This is why the bug is easy
 to miss.
